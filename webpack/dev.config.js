@@ -5,8 +5,6 @@ const {
   loaders,
 } = require('./common');
 
-// const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
-
 // 解析配置参数
 // 构建compiler对象
 // 执行compiler对象的run
@@ -32,7 +30,6 @@ module.exports = {
   },
   plugins: [
     plugins.html,
-    // new NodePolyfillPlugin()
   ],
   module: {
     rules: [

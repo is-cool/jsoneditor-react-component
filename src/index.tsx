@@ -7,7 +7,7 @@ interface Props {
   value: string;
   onChange: (value: string) => void;
   options?: JSONEditorOptions;
-  style?: React.CSSProperties
+  style?: React.CSSProperties;
 }
 
 const defaultStyle = {
@@ -16,7 +16,7 @@ const defaultStyle = {
 }
 
 export default (props: Props) => {
-  const { value, onChange, options = {}, style= {} } = props;
+  const { value, onChange, options = {}, style= {}, ...result } = props;
 
   const editorRef = useRef<HTMLInputElement | null>(null);
   const editorObj = useRef<any | null>(null);
@@ -44,6 +44,7 @@ export default (props: Props) => {
           indentation: 4,
           onChangeText: handleChange,
           ...options,
+          ...result,
         };
         editorObj.current = new JSONEditor(editorRef?.current as HTMLElement, totalOptions as JSONEditorOptions);
       }

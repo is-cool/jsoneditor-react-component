@@ -8,7 +8,6 @@ const { NODE_ENV = 'development' } = process.env;
 const pathTo = (p) => path.join(process.cwd(), p);
 exports.pathTo = pathTo;
 
-
 exports.loaders = {
   css: {
     test: /\.css$/,
@@ -16,7 +15,6 @@ exports.loaders = {
     include: [pathTo('src'), pathTo('example')],
   },
   babel: {
-    // test: /\.tsx$/,
     test: /\.(js|jsx|ts|tsx)$/,
     use: [
       {
@@ -30,9 +28,7 @@ exports.loaders = {
           ],
         },
       },
-      // require.resolve('ts-loader'),
     ],
-    // loader: require.resolve("babel-loader"),
     include: [pathTo('src'), pathTo('example')],
   },
 };

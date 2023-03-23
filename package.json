@@ -16,8 +16,6 @@
   "author": "coldHand",
   "license": "ISC",
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "jsoneditor": "^9.10.0",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
@@ -25,9 +23,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
-    "@hot-loader/react-dom": "^17.0.2",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@types/jsoneditor": "^9.9.0",
@@ -40,7 +39,6 @@
     "html-webpack-plugin": "^5.5.0",
     "html-webpack-tags-plugin": "^3.0.2",
     "lodash-webpack-plugin": "^0.11.6",
-    "postcss-loader": "^7.1.0",
     "prettier": "^2.8.4",
     "rollup": "^3.20.0",
     "rollup-plugin-copy": "^3.4.0",
