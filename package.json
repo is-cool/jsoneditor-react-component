@@ -1,6 +1,6 @@
 {
   "name": "jsoneditor-react-component",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "一个基于jsoneditor封装的react hooks+ts的组件。",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
@@ -12,7 +12,6 @@
     "start": "webpack serve --hot --config ./webpack/dev.config.js",
     "build": "rollup -c rollup.es.config.js -i src/index.tsx"
   },
-  "keywords": [],
   "author": "coldHand",
   "license": "ISC",
   "dependencies": {
