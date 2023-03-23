@@ -1,6 +1,6 @@
 {
   "name": "jsoneditor-react-component",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "一个基于jsoneditor封装的react hooks+ts的组件。",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",

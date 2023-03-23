@@ -2,7 +2,7 @@ import React from "react";
 import { JSONEditorOptions } from "jsoneditor";
 import 'jsoneditor/dist/jsoneditor.css';
 interface Props {
-    value: string;
+    value: string | number | boolean | object | [];
     onChange: (value: string) => void;
     options?: JSONEditorOptions;
     style?: React.CSSProperties;

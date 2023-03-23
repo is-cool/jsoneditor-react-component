@@ -4,7 +4,7 @@ import 'jsoneditor/dist/jsoneditor.css';
 import _ from 'lodash';
 
 interface Props {
-  value: string;
+  value: string | number | boolean | object | [];
   onChange: (value: string) => void;
   options?: JSONEditorOptions;
   style?: React.CSSProperties;

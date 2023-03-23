@@ -17,7 +17,7 @@ import JSONEditor from "jsoneditor-react-component";
     console.log("onChangeText", value);
   };
   //options默认配置：mode: 'code', modes: ['code', 'tree', 'form', 'view', 'text'], indentation: 4
- <JSONEditor options={} value={'{"a": "c"}'} onChange={onChangeText} />
+ <JSONEditor options={} value={{"a": "c"}} onChange={onChangeText} />
 ```
 If you want use with Ajv
 
@@ -28,7 +28,7 @@ const ajv = new Ajv({ allErrors: true, verbose: true });
  const onChangeText = (value) => {
     console.log("onChangeText", value);
   };
- <JSONEditor options={ ajv } value={'{"a": "c"}'} onChange={onChangeText} />
+ <JSONEditor options={ ajv } value={{"a": "c"}} onChange={onChangeText} />
 ```
 
 If you want use with Ace Editor:
@@ -41,7 +41,7 @@ import 'brace/theme/github';
  const onChangeText = (value) => {
     console.log("onChangeText", value);
   };
- <JSONEditor options={{ ace, theme="ace/theme/github" }} value={'{"a": "c"}'} onChange={onChangeText} />
+ <JSONEditor options={{ ace, theme="ace/theme/github" }} value={{"a": "c"}} onChange={onChangeText} />
 ```
 
 
